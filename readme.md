@@ -1,6 +1,6 @@
 ## Bulk download vídeos
 
-Depends on [youtube-dl](https://github.com/ytdl-org/youtube-dl) cli.
+Depends on [yt-dlp](https://github.com/yt-dlp/yt-dlp) cli.
 
 - First, create videos.txt file
 - Write an youtube vídeo ID per line: Example: https://youtube.com?v=```videoID```
