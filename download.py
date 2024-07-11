@@ -2,5 +2,5 @@ import os
 
 with open("videos.txt") as file_in:
     for line in file_in:
-        os.system("yt-dlp -f 22 -o %\(title\)s.f%\(format_id\)s.%\(ext\)s http://www.youtube.com/watch?v={line}".format(line=line))
-    print("Download finish!")
+        os.system(f"yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 -o '%(title)s.%(ext)s' -- {line.strip()}")
+    print("Download finished!")
